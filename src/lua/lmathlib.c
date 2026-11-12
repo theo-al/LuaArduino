@@ -7,6 +7,10 @@
 
 #include <stdlib.h>
 #include <math.h>
+#ifndef HUGE_VAL
+#define HUGE_VAL __builtin_huge_val()
+#endif
+
 
 #define lmathlib_c
 #define LUA_LIB
